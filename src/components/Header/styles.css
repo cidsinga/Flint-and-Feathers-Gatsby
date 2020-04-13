@@ -1,0 +1,52 @@
+.container {
+    width: 100vw;
+    display: inline-block;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #2f2f2d;
+    height: 23vh;
+    position: relative
+}
+
+  .list {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    margin-top: 150px
+  }
+
+  .menu {
+    display: inline-block;
+    float: right;
+    width: 69%
+  }
+
+  .title {
+    float: left;
+    width: 30%;
+    height: 200px;
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 50px;
+    font-size: 38px
+  }
+
+  .h3 {
+    display: inline;
+    padding: 5px;
+    text-align: center;
+    float: right;
+    font-size: 14px
+  }
+
+
+  .space {
+    display: inline-block;
+    float: right;
+    width: 5%
+  }
+
+  .link {
+    text-decoration: none
+
+  }
