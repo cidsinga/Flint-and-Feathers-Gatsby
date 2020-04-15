@@ -1,20 +1,18 @@
-import React from "react";
-import brandy from "../../Images/brandy.jpg";
-import './styles.css';
+import React from "react"
+import brandy from "../../Images/brandy.jpg"
+import { Main, Title, Photo, Text } from "./styled.js"
 
 function About() {
-
-
   return (
-    <div className='container'>
-      <h1 className='title'>About</h1>
-      <img className='photo' src={brandy} />
-      <p className='text'>
+    <Main>
+      <Title>About</Title>
+      <Photo src={brandy} />
+      <Text>
         Brandy is an amazing artist, and even more amazing person. She does
         everything better than you. I know. You're jealous. And you should be.
-      </p>
-    </div>
-  );
+      </Text>
+    </Main>
+  )
 }
 
-export default About;
+export default About

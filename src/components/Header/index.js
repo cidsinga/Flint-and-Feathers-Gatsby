@@ -1,72 +1,60 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import { Container, Row, Col } from "reactstrap";
+import React from "react"
+
+import { Row, Col } from "reactstrap"
+import {
+  HoverText,
+  HoverTitle,
+  Main,
+  PageLink,
+  List,
+  Menu,
+  Space,
+  A,
+} from "./styled.js"
 
 function Header() {
-
-
-  const HoverText = styled.h3`
-    color: #000;
-    :hover {
-      color: gray;
-      cursor: pointer;
-    }
-  `;
-
-  const HoverTitle = styled.h1`
-    color: #000;
-    :hover {
-      cursor: pointer;
-      opacity: 0.5;
-    }
-  `;
-
   return (
-    <Container className='container'>
+    <Main>
       <Row>
         <Col xs="5">
-          <Link to="/" className={{ textDecoration: "none" }}>
-            <HoverTitle className='title'>FLINT & FEATHERS</HoverTitle>
-          </Link>
+          <PageLink to="/">
+            <HoverTitle>FLINT & FEATHERS</HoverTitle>
+          </PageLink>
         </Col>
-        <Col xs="3"></Col>
+        <Col xs="3" />
         <Col xs="4">
-          <div className='menu'>
-            <li className='list'>
-              <a
-                href="https://www.etsy.com/shop/flintandfeathers/"
-                className='link'
-              >
-                <HoverText className={h3}>Shop</HoverText>
-              </a>
-            </li>
-            <li className='list'>
-              <Link to="/about" className='link'>
-                <HoverText className={h3}>About</HoverText>
-              </Link>
-            </li>
-            <li className='list'>
-              <Link to="/gallery" className='link'>
-                <HoverText className={h3}>Gallery</HoverText>
-              </Link>
-            </li>
-            <li className='list'>
-              <Link to="/" className='link'>
-                <HoverText className={h3}>Collections</HoverText>
-              </Link>
-            </li>
+          <Menu>
+            <List>
+              <A href="https://www.etsy.com/shop/flintandfeathers/">
+                <HoverText>Shop</HoverText>
+              </A>
+            </List>
+            <List>
+              <PageLink to="/about">
+                <HoverText>About</HoverText>
+              </PageLink>
+            </List>
+            <List>
+              <PageLink to="/gallery">
+                <HoverText>Gallery</HoverText>
+              </PageLink>
+            </List>
+            <List>
+              <PageLink to="/">
+                <HoverText>Collections</HoverText>
+              </PageLink>
+            </List>
             <style jsx>{`
               a:visited {
                 color: #2f2f2d;
               }
             `}</style>
-          </div>
+          </Menu>
         </Col>
       </Row>
-      <div className='space'> </div>
-    </Container>
-  );
+      <Space />
+    </Main>
+  )
 }
 
-export default Header;
+export default Header

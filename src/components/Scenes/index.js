@@ -1,21 +1,19 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import Gorge from "../../Images/Gorge.jpg";
-import Everest from "../../Images/Everest.jpg";
+import React from "react"
+import { Row } from "reactstrap"
+import Gorge from "../../Images/Gorge.jpg"
+import Everest from "../../Images/Everest.jpg"
+import { Main, Photo } from "./styled.js"
 
 function Scenes() {
-
   return (
-    <div className='container'>
-      <Container>
-        <Row>
-          <h1>Scenes</h1>
-          <img className='photo' src={Gorge} />
-          <img className='photo' src={Everest} />
-        </Row>
-      </Container>
-    </div>
-  );
+    <Main>
+      <Row>
+        <h1>Scenes</h1>
+        <Photo src={Gorge} />
+        <Photo src={Everest} />
+      </Row>
+    </Main>
+  )
 }
 
-export default Scenes;
+export default Scenes

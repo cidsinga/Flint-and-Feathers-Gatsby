@@ -1,37 +1,36 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import Balloons from "../../Images/Balloons.jpg";
-import Cactus from "../../Images/Cactus.jpg";
-import Arrows from "../../Images/CupidsArrows.jpg";
-import Eggs from "../../Images/Eggs.jpg";
-import Abstract from "../../Images/FirstAbstract.jpg";
-import Jasmine from "../../Images/Jasmine.jpg";
-import Mushroom from "../../Images/Mushroom.jpg";
-import Shroom from "../../Images/WhiteShroomSquare.jpg";
-import Jewel from "../../Images/Jewel.jpg";
+import React from "react"
+import { Row } from "reactstrap"
+import Balloons from "../../Images/Balloons.jpg"
+import Arrows from "../../Images/CupidsArrows.jpg"
+import Eggs from "../../Images/Eggs.jpg"
+import Abstract from "../../Images/FirstAbstract.jpg"
+import Jasmine from "../../Images/Jasmine.jpg"
+import Mushroom from "../../Images/Mushroom.jpg"
+import Shroom from "../../Images/WhiteShroomSquare.jpg"
+import Jewel from "../../Images/Jewel.jpg"
+import { Main, MainRow, Photo, Left, Right } from "./styled.js"
 
 function Fun() {
   return (
-    <Container className='container'>
+    <Main>
       <h1>Fun</h1>
-      <Row className='row'>
-        <Col xs="auto" className='left'>
-          <img className='photo' src={Balloons} />
-          <img className='photo' src={Abstract} />
-          <img className='photo' src={Jasmine} />
-          <img className='photo' src={Eggs} />
-        </Col>
-        <Col xs="auto" className='right'>
-          <img className='photo' src={Jewel} />
-          <img className='photo' src={Shroom} />
-          <img className='photo' src={Mushroom} />
-          <img className='photo' src={Arrows} />
-        </Col>
-      </Row>
-      <row></row>
-      <Row></Row>
-    </Container>
-  );
+      <MainRow>
+        <Left xs="auto">
+          <Photo src={Balloons} />
+          <Photo src={Abstract} />
+          <Photo src={Jasmine} />
+          <Photo src={Eggs} />
+        </Left>
+        <Right xs="auto">
+          <Photo src={Jewel} />
+          <Photo src={Shroom} />
+          <Photo src={Mushroom} />
+          <Photo src={Arrows} />
+        </Right>
+      </MainRow>
+      <Row />
+    </Main>
+  )
 }
 
-export default Fun;
+export default Fun

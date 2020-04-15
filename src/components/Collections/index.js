@@ -1,68 +1,62 @@
-import React from "react";
-import { Link } from "gatsby";
-import { Container, Row, Col } from "reactstrap";
-import styled from "styled-components";
-import Flowers from "../../images/FlowersMock.jpg";
-import Ruby from "../../images/Ruby.jpg";
-import Gorge from "../../images/Gorge.jpg";
-import Jewel from "../../images/Jewel.jpg";
-import Gathering from "../../images/Gathering.jpg";
-import './styles.css';
+import React from "react"
+import { Row, Col } from "reactstrap"
+import Flowers from "../../images/FlowersMock.jpg"
+import Ruby from "../../images/Ruby.jpg"
+import Gorge from "../../images/Gorge.jpg"
+import Jewel from "../../images/Jewel.jpg"
+import Gathering from "../../images/Gathering.jpg"
+import {
+  Main,
+  Tagline,
+  Line,
+  TopRow,
+  PageLink,
+  BottomRow,
+  HoverPic,
+} from "./styled.js"
 
 function Collections() {
-
-  const HoverPic = styled.img`
-    color: #000;
-    :hover {
-      cursor: pointer;
-      opacity: 0.7;
-    }
-  `;
-
   return (
-    <Container className='container'>
-      <h1 className='tagline'>
-        EXPLORING NATURE'S BEAUTY ONE BRUSH STROKE AT A TIME
-      </h1>
-      <hr className='line'></hr>
+    <Main>
+      <Tagline>EXPLORING NATURE'S BEAUTY ONE BRUSH STROKE AT A TIME</Tagline>
+      <Line />
       <div>
-        <h1 className='tagline'>COLLECTIONS</h1>
+        <Tagline>COLLECTIONS</Tagline>
       </div>
 
-      <Row className='topRow'>
+      <TopRow>
         <Col>
-          <Link to="/flowers" className='link'>
-            <HoverPic className='photo' src={Flowers} />
-          </Link>
-          
+          <PageLink to="/flowers">
+            <HoverPic src={Flowers} />
+          </PageLink>
         </Col>
         <Col>
-          <Link to="/scenes" className='link'>
-            <HoverPic className='photo' src={Gorge} />
-          </Link>
+          <PageLink to="/scenes">
+            <HoverPic src={Gorge} />
+          </PageLink>
         </Col>
         <Col>
-          <Link to="/stones" className='link'>
-            <HoverPic className='photo' src={Ruby} />
-          </Link>
+          <PageLink to="/stones">
+            <HoverPic src={Ruby} />
+          </PageLink>
         </Col>
-      </Row>
+      </TopRow>
 
-      <Row className='topRow'>
+      <BottomRow>
         <Col>
-          <Link to="/Feathers" className='link'>
-            <HoverPic className='photo' src={Gathering} />
-          </Link>
+          <PageLink to="/Feathers">
+            <HoverPic src={Gathering} />
+          </PageLink>
         </Col>
         <Col>
-          <Link to="/fun" className='link'>
-            <HoverPic className='photo' src={Jewel} />
-          </Link>
+          <PageLink to="/fun">
+            <HoverPic src={Jewel} />
+          </PageLink>
         </Col>
-      </Row>
-      <Row></Row>
-    </Container>
-  );
+      </BottomRow>
+      <Row />
+    </Main>
+  )
 }
 
-export default Collections;
+export default Collections

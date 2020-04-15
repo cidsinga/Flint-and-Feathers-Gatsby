@@ -1,35 +1,31 @@
-import React from "react";
-import { FaEtsy } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
-import { Container, Row, Col } from "reactstrap";
+import React from "react"
+import { Col } from "reactstrap"
+import { Main, MainRow, Left, Etsy, FB, Insta, Icons } from "./styled.js"
 
 function Footer() {
-
-
   return (
-    <div classstyle='container'>
-      <row className={{ marginTop: "20%" }}>
+    <Main>
+      <MainRow>
         <Col xs="3">
-          <h5 className='left'>Copyright Brandy Idsinga 2020</h5>
+          <Left>Copyright Brandy Idsinga 2020</Left>
         </Col>
-        <Col xs="auto"></Col>
+        <Col xs="auto" />
         <Col xs="3">
-          <div className='icons'>
+          <Icons>
             <a href="https://www.etsy.com/shop/flintandfeathers/">
-              <FaEtsy className='icon'></FaEtsy>
+              <Etsy />
             </a>
             <a href="https://www.facebook.com/flintandfeathers/">
-              <FaFacebookSquare className='icon'></FaFacebookSquare>
+              <FB />
             </a>
             <a href="https://www.instagram.com/flintandfeathers/?hl=en">
-              <FaInstagram className='icon'></FaInstagram>
+              <Insta />
             </a>
-          </div>
+          </Icons>
         </Col>
-      </row>
-    </div>
-  );
+      </MainRow>
+    </Main>
+  )
 }
 
-export default Footer;
+export default Footer
