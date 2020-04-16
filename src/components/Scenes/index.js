@@ -1,7 +1,7 @@
 import React from "react"
 import { Row } from "reactstrap"
-import Gorge from "../../Images/Gorge.jpg"
-import Everest from "../../Images/Everest.jpg"
+import Gorge from "../../images/Gorge.jpg"
+import Everest from "../../images/Everest.jpg"
 import { Main, Photo } from "./styled.js"
 
 function Scenes() {

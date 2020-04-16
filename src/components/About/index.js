@@ -1,5 +1,5 @@
 import React from "react"
-import brandy from "../../Images/brandy.jpg"
+import brandy from "../../images/brandy.jpg"
 import { Main, Title, Photo, Text } from "./styled.js"
 
 function About() {

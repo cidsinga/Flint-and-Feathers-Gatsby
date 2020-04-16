@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Suarez from "../../Images/Suarez.jpg"
+import Suarez from "../../images/Suarez.jpg"
 import { Main, Photo } from "./styled.js"
 
 function Error404() {
