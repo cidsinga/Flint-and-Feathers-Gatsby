@@ -8,6 +8,8 @@ export const Main = styled(Container)`
   color: #2f2f2d;
   height: 23vh;
   position: relative;
+  text-align: center;
+  margin-bottom: 70%;
 `
 
 export const Title = styled.h1`
@@ -15,6 +17,7 @@ export const Title = styled.h1`
 `
 
 export const Photo = styled.img`
+  display: inline-block;
   width: 50%;
   float: right;
 `

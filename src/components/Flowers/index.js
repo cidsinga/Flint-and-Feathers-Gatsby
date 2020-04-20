@@ -25,9 +25,9 @@ function Flowers() {
           <Photo src={Monroe} />
         </Right>
       </MainRow>
-      <row>
+      <Row>
         <Center src={NewBeginningsFlowers} />
-      </row>
+      </Row>
       <Row />
     </Main>
   )

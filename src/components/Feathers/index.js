@@ -1,4 +1,5 @@
 import React from "react"
+import { Row } from "reactstrap"
 import SmallP from "../../images/BackPeacock.jpg"
 import Blue from "../../images/BlueJay.jpg"
 import Flicker from "../../images/Flicker.jpg"
@@ -27,7 +28,7 @@ function Feathers() {
           <Photo src={Peacock} />
         </Right>
       </MainRow>
-      <row />
+      <Row />
     </Main>
   )
 }

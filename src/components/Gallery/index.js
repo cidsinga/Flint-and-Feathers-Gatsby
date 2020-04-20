@@ -1,4 +1,5 @@
 import React from "react"
+import { Row } from "reactstrap"
 import Gathering from "../../images/Gathering.jpg"
 import Monroe from "../../images/Monroe2.jpg"
 import Group from "../../images/PeacockGroup.jpg"
@@ -31,7 +32,7 @@ function Gallery() {
           <Photo src={Emerald2} />
         </Right>
       </MainRow>
-      <row />
+      <Row />
     </Main>
   )
 }

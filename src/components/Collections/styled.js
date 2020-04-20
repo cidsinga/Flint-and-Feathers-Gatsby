@@ -1,4 +1,4 @@
-import { Container, Row } from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
@@ -23,8 +23,6 @@ export const Line = styled.hr`
 `
 export const TopRow = styled(Row)`
   width: 100%;
-  margin-left: 5%;
-  margin-right: auto;
 `
 
 export const PageLink = styled(Link)`
@@ -40,14 +38,20 @@ export const BottomRow = styled(Row)`
 
 export const HoverPic = styled.img`
   display: inline-block;
-  width: 100%;
+  width: 30vw;
   padding: 2.5%;
   float: left;
   margin-top: 3%;
-  /* marginLeft: 3% */
+  margin-left: 3%;
+  margin-right: 3%;
   color: #000;
   :hover {
     cursor: pointer;
     opacity: 0.7;
   }
+`
+
+export const PicCol = styled(Col)`
+  ${"" /* display: inline-block; */}
+  float: left;
 `

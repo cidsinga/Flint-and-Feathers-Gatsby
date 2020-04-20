@@ -1,5 +1,6 @@
 import React from "react"
 import brandy from "../../images/brandy.jpg"
+import { Row } from "reactstrap"
 import { Main, Title, Photo, Text } from "./styled.js"
 
 function About() {
@@ -11,6 +12,7 @@ function About() {
         Brandy is an amazing artist, and even more amazing person. She does
         everything better than you. I know. You're jealous. And you should be.
       </Text>
+      <Row />
     </Main>
   )
 }

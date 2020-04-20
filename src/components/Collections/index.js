@@ -1,5 +1,5 @@
 import React from "react"
-import { Row, Col } from "reactstrap"
+import { Row } from "reactstrap"
 import Flowers from "../../images/FlowersMock.jpg"
 import Ruby from "../../images/Ruby.jpg"
 import Gorge from "../../images/Gorge.jpg"
@@ -13,6 +13,7 @@ import {
   PageLink,
   BottomRow,
   HoverPic,
+  PicCol,
 } from "./styled.js"
 
 function Collections() {
@@ -25,34 +26,34 @@ function Collections() {
       </div>
 
       <TopRow>
-        <Col>
+        <PicCol>
           <PageLink to="/flowers">
             <HoverPic src={Flowers} />
           </PageLink>
-        </Col>
-        <Col>
+        </PicCol>
+        <PicCol>
           <PageLink to="/scenes">
             <HoverPic src={Gorge} />
           </PageLink>
-        </Col>
-        <Col>
+        </PicCol>
+        <PicCol>
           <PageLink to="/stones">
             <HoverPic src={Ruby} />
           </PageLink>
-        </Col>
+        </PicCol>
       </TopRow>
 
       <BottomRow>
-        <Col>
+        <PicCol>
           <PageLink to="/Feathers">
             <HoverPic src={Gathering} />
           </PageLink>
-        </Col>
-        <Col>
+        </PicCol>
+        <PicCol>
           <PageLink to="/fun">
             <HoverPic src={Jewel} />
           </PageLink>
-        </Col>
+        </PicCol>
       </BottomRow>
       <Row />
     </Main>

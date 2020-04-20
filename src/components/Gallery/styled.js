@@ -18,7 +18,6 @@ export const MainRow = styled(Row)`
 
 export const Left = styled(Col)`
   display: inline-block;
-  float: left;
   width: 42.5%;
   margin-right: 2.5%;
   margin-left: 5%;

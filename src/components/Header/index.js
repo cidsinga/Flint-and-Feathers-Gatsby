@@ -18,39 +18,40 @@ function Header() {
       <Row>
         <Col xs="5">
           <PageLink to="/">
-            <HoverTitle>FLINT & FEATHERS</HoverTitle>
+            <HoverTitle>
+              FLINT & <br />
+              FEATHERS
+            </HoverTitle>
           </PageLink>
         </Col>
-        <Col xs="3" />
-        <Col xs="4">
-          <Menu>
-            <List>
-              <A href="https://www.etsy.com/shop/flintandfeathers/">
-                <HoverText>Shop</HoverText>
-              </A>
-            </List>
-            <List>
-              <PageLink to="/about">
-                <HoverText>About</HoverText>
-              </PageLink>
-            </List>
-            <List>
-              <PageLink to="/gallery">
-                <HoverText>Gallery</HoverText>
-              </PageLink>
-            </List>
-            <List>
-              <PageLink to="/">
-                <HoverText>Collections</HoverText>
-              </PageLink>
-            </List>
-            <style jsx>{`
+        <Col />
+        <Menu xs="4">
+          <List>
+            <A href="https://www.etsy.com/shop/flintandfeathers/">
+              <HoverText>Shop</HoverText>
+            </A>
+          </List>
+          <List>
+            <PageLink to="/about">
+              <HoverText>About</HoverText>
+            </PageLink>
+          </List>
+          <List>
+            <PageLink to="/gallery">
+              <HoverText>Gallery</HoverText>
+            </PageLink>
+          </List>
+          <List>
+            <PageLink to="/">
+              <HoverText>Collections</HoverText>
+            </PageLink>
+          </List>
+          {/* <Style jsx>{`
               a:visited {
                 color: #2f2f2d;
               }
-            `}</style>
-          </Menu>
-        </Col>
+            `}</Style> */}
+        </Menu>
       </Row>
       <Space />
     </Main>
