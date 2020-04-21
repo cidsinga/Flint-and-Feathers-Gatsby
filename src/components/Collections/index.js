@@ -45,7 +45,7 @@ function Collections() {
 
       <BottomRow>
         <PicCol>
-          <PageLink to="/Feathers">
+          <PageLink to="/feathers">
             <HoverPic src={Gathering} />
           </PageLink>
         </PicCol>

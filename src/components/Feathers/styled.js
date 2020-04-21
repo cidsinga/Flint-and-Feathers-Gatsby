@@ -5,7 +5,7 @@ export const Main = styled(Container)`
   width: 100%;
   height: 77%;
   display: inline-block;
-  font-family: Julius Sans One, sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   color: #2f2f2d;
   font-size: 20px;
   margin-bottom: 20%;
