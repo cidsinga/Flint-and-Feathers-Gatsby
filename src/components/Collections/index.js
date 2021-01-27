@@ -1,9 +1,9 @@
 import React from "react"
 import { Row } from "reactstrap"
-import Flowers from "../../images/FlowersMock.jpg"
-import Ruby from "../../images/Ruby.jpg"
-import Gorge from "../../images/Gorge.jpg"
-import Jewel from "../../images/Jewel.jpg"
+import Flowers from "../../images/FlowersSquare.jpg"
+import Ruby from "../../images/RubySquare.jpg"
+import Gorge from "../../images/GorgeSquareMock.jpg"
+import Jewel from "../../images/AbstractSquare.jpg"
 import Gathering from "../../images/Gathering.jpg"
 import {
   Main,

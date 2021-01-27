@@ -1,11 +1,13 @@
-import { Container, Row } from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
 import styled from "styled-components"
 import { FaEtsy, FaInstagram, FaFacebookSquare } from "react-icons/fa"
 
 export const Main = styled(Container)`
   width: 100%;
+  min-width: 600px;
   height: 20%;
   margin-top: 10%;
+  margin-bottom: 0%
   padding-top: 0%;
 `
 export const MainRow = styled(Row)`
@@ -24,7 +26,7 @@ export const Icons = styled.div`
   float: right;
   width: 35%;
   text-align: right;
-  margin-bottom: 10%;
+  margin-bottom: 0%;
   margin-top: 2%;
   margin-left: 0%;
 `

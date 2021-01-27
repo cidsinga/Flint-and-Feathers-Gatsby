@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 
 export const Main = styled(Container)`
   width: 100%;
+  min-width: 600px;
   height: 77%;
   display: inline-block;
   font-family: "Julius Sans One", sans-serif;
@@ -23,6 +24,7 @@ export const Line = styled.hr`
 `
 export const TopRow = styled(Row)`
   width: 100%;
+  min-width: 600px;
 `
 
 export const PageLink = styled(Link)`
@@ -31,9 +33,10 @@ export const PageLink = styled(Link)`
 export const BottomRow = styled(Row)`
   display: inline-block;
   width: 100%;
+  min-width: 600px;
   float: left;
-  margin-left: 20%;
-  margin-right: auto;
+  margin-left: 15%;
+  margin-right: 15%;
 `
 
 export const HoverPic = styled.img`

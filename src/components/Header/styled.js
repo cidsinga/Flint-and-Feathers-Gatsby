@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 
 export const Main = styled(Container)`
   width: 100vw;
+  min-width: 600px;
+  min-width: 600px;
   font-family: "Julius Sans One", sans-serif;
   color: #2f2f2d;
   height: 23vh;

@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 export const Main = styled(Container)`
   width: 100vw;
+  min-width: 600px;
   display: inline-block;
   font-family: "Julius Sans One", sans-serif;
   color: #2f2f2d;
